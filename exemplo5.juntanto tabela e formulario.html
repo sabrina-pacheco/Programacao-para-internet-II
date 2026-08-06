@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="container-fluid p-4 bg-primary text-white text-center shadow-sm mb-4">
+  <h1 class="h2 fw-bold">Quinto Exemplo: Juntanto Tabela e Formulário</h1>
+</div>
+
+  <div class="row g-4">    <!-- Coluna da esquerda -->
+  <!-- Form com Input Groups e Switch -->
+  <div class="col-12 col-lg-5">  
+    <div class="card p-3 shadow-sm border-0">   <!-- Cria um card -->
+      <div class="mb-3">    <!-- Aumenta um pouco a altura como resultado visual -->
+        <label class="form-label fw-semibold">Nome Completo</label>   <!-- Label é um elemento de formulário - identificação textual -->
+        <div class="input-group">   <!-- Ele agrupa um conjunto de ferramentas e botões -->
+          <span class="input-group-text"><i class="bi bi-person"></i></span>   <!--Ela faz o beirado cinza ao lado do campo para preenchimento-->
+          <input type="text" class="form-control" id="email" placeholder="Ex: Maria Oliveira">  <!-- Insere caixa para adquirir nome completo  -->
+        </div>
+      </div>   <!-- Até aqui temos a criação da primeira caixa  -->
+      <div class="mb-3">   <!--cada mb-3 consiste na criação de um novo campo para preenchimento-->
+        <label class="form-label fw-semibold">Endereço de E-mail</label>
+        <div class="input-group">
+          <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+          <input type="email" class="form-control" placeholder="nome@exemplo.com">
+        </div>
+      </div>
+      <div class="mb-3 form-check form-switch">
+        <input class="form-check-input" type="checkbox" checked>
+        <label class="form-check-label">Notificar por e-mail</label>
+      </div>
+      <button class="btn btn-success w-100">Cadastrar Aluno (Estático)</button>
+    </div>
+  </div>
+
+   <div class="mb-3">
+        <label class="form-label fw-semibold">Nome do curso</label>
+        <select class="form-select" id="curso">   <!--o selected serve para deixar opções previamente selecionadas-->
+          <option selected>Sistemas para Internet</option>
+          <option>Análise e Des. de Sistemas</option>
+          <option>Técnico em Informática</option>
+        </select>
+      </div>
+
+</div>
+      <div class="mb-3 form-check form-switch p-2 bg-white rounded border ps-5">
+        <input class="form-check-input" type="checkbox" id="notificar" checked>  <!--aqui é um checkbox, é possível marcar várias possíveis-->
+        <label class="form-check-label" for="notificar">Receber avisos por e-mail</label> <!--aqui a label é para inserção de texto-->
+      </div>
+      <button type="button" class="btn btn-success w-100">Cadastrar Aluno (Estático)</button> <!--cria um botão-->
+    </div>
+  </div>
+
+
+<!--Coluna da direita-->
+<!-- COLUNA DA DIREITA: Tabela Zebrada Responsiva com Bordas -->
+  <div class="col-12 col-lg-7">
+    <div class="table-responsive rounded border">
+      <table class="table table-striped table-hover table-bordered border-secondary-subtle align-middle mb-0">
+        <thead class="table-dark">
+          <tr>
+            <th class="text-center">#</th>
+            <th>Nome Completo</th>
+            <th>E-mail</th>
+            <th>Curso</th>
+            <th class="text-center">Status</th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
+          <tr>
+            <td class="text-center">1</td>
+            <td class="fw-bold text-primary">Ana Silva</td>
+            <td>ana.silva@aluno.ifsc.edu.br</td>
+            <td>Sistemas para Internet</td>
+            <td class="text-center"><span class="badge bg-success">Ativo</span></td>
+          </tr>
+          <tr>
+            <td class="text-center">2</td>
+            <td class="fw-bold text-primary">Bruno Souza</td>
+            <td>bruno.souza@aluno.ifsc.edu.br</td>
+            <td>Sistemas para Internet</td>
+            <td class="text-center"><span class="badge bg-warning text-dark">Pendente</span></td>
+          </tr>
+          <tr>
+            <td class="text-center">3</td>
+            <td class="fw-bold text-primary">Carla Mendes</td>
+            <td>carla.mendes@aluno.ifsc.edu.br</td>
+            <td>Análise e Des. de Sistemas</td>
+            <td class="text-center"><span class="badge bg-success">Ativo</span></td>
+          </tr>
+          <tr>
+            <td class="text-center">4</td>
+            <td class="fw-bold text-primary">Diego Oliveira</td>
+            <td>diego.o@aluno.ifsc.edu.br</td>
+            <td>Sistemas para Internet</td>
+            <td class="text-center"><span class="badge bg-danger">Inativo</span></td>
+          </tr>
+          <tr>
+            <td class="text-center">5</td>
+            <td class="fw-bold text-primary">Elena Rostova</td>
+            <td>elena.rostova@aluno.ifsc.edu.br</td>
+            <td>Licenciatura em Computação</td>
+            <td class="text-center"><span class="badge bg-success">Ativo</span></td>
+          </tr>
+          <tr>
+            <td class="text-center">6</td>
+            <td class="fw-bold text-primary">Fernando Costa</td>
+            <td>fernando.c@aluno.ifsc.edu.br</td>
+            <td>Engenharia de Software</td>
+            <td class="text-center"><span class="badge bg-success">Ativo</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
