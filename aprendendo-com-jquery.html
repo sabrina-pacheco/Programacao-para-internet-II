@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#btnSumir").click(function(){
+    $("p").hide();
+  });
+  
+  $("btnCor").click(function() {
+  	$("p").css("color", "red");
+  });
+  
+  $("btnPiscar").click(function() {
+  	$("p").animate({opacity: "0.2"});
+    $("p").animate({opacity: "1"}); 
+
+});
+
+</script>
+</head>
+<body>
+
+<button id="btnCor">Trocar a cor dos parágrafos</button>
+<button id="btnSumir">Esconder parágrafos</button>
+<button id="btnPiscar">Piscar o parágrafo</button>
+
+</body>
+</html>
