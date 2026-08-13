@@ -35,15 +35,19 @@ $(document).ready(function() {
         const nome = $('#input-nome').val();
         const email = $('#input-email').val();
 
-        $('#caixa-mensagem')
-            .removeClass('d-none')
-            .html(`Lido: <strong>${nome}</strong> (${email})`);
-    });
-
+ // NOVO NO EXEMPLO 7: Troca de classes e animação de piscar 2x
+    $('#caixa-mensagem')
+      .removeClass('d-none alert-info alert-danger')
+      .addClass('alert-success')
+      .html(`🎉 <strong>Sucesso!</strong> Cliente <u>${nome}</u> cadastrado!`)
+      .fadeOut(150).fadeIn(150)
+      .fadeOut(150).fadeIn(400);
+  });
 });
+
+
 </script>
 
-<!-- acima tem que ser crase para que ele leia variáveis diferentes-->
 
 </body>
 </html>
